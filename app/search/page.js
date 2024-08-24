@@ -1,11 +1,12 @@
 "use client";
-// เรียกใช้งาน component button
-import { Button } from "@material-tailwind/react";
 
-export default function Home() {
+import { Button } from "@material-tailwind/react";
+import React from "react";
+
+function Page() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <h1 className="text-4xl font-bold">Welcome to Book Search!</h1>
+      <h1 className="text-4xl font-bold">ค้นหาหนังสือที่นี่!</h1>
       <p className="text-2xl mb-4">By : Thongchai Bunjamat</p>
       <Button color="lightBlue" ripple="light">
         ค้นหาหนังสือ
@@ -13,3 +14,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Page;
